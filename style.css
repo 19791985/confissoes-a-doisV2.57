@@ -34,6 +34,16 @@ body {
 
 .screen {
   display: none;
+  /* Outras propriedades de estilo conforme necessário */
+}
+
+.screen.active {
+  display: block;
+  /* Outras propriedades de estilo conforme necessário */
+}
+
+.screen {
+  display: none;
   flex-direction: column;
   align-items: center;
   padding: 20px;
