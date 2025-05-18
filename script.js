@@ -1125,14 +1125,3 @@ function showResult() {
 
   summaryEl.textContent = resumo;
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  const introSlide = document.getElementById('intro-slide');
-  const quizContainer = document.getElementById('quiz-container');
-  const startButton = document.getElementById('start-button');
-
-  startButton.addEventListener('click', () => {
-    introSlide.classList.remove('active');
-    quizContainer.classList.add('active');
-  });
-});
