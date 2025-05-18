@@ -88,13 +88,3 @@ button:hover {
   color: white;
   cursor: pointer;
 }
-
-.slide {
-  display: none;
-  text-align: center;
-  padding: 50px;
-}
-
-.slide.active {
-  display: block;
-}
