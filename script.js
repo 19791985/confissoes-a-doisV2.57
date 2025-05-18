@@ -7,6 +7,8 @@ const answersEl = document.getElementById("answers");
 const resultScreen = document.getElementById("result");
 const summaryEl = document.getElementById("summary");
 const continueBtn = document.getElementById("continue-btn");
+const introSlide = document.getElementById("intro-screen");
+const enterButton = document.getElementById("enter-button");
 
 const phases = [
   { title: "Fase 1: Conexão Emocional", description: "Explora o que une os nossos corações e mentes. Nesta fase, exploramos as emoções, a ternura e a ligação afetiva como casal. As perguntas são construídas para fortalecer o diálogo íntimo, a empatia e a valorização do “nós”. Cada resposta representa uma nuance emocional diferente." },
@@ -1022,6 +1024,11 @@ const questions = [
 let currentPhase = 0;
 let currentQuestionIndex = 0;
 let results = [];
+
+enterButton.onclick = () => {
+  introSlide.classList.remove("active");
+  introScreen.classList.add("active");
+};
 
 startBtn.onclick = () => {
   introScreen.classList.add("hidden");
